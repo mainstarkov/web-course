@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея — Всё о космосе</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Добро пожаловать в мир астрономии!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html" class="active">Галерея</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery-header">
+            <h2>Галерея космоса</h2>
+            <p id="photo-count">Загрузка...</p>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="planet">Планеты</button>
+                <button class="filter-btn" data-filter="galaxy">Галактики</button>
+                <button class="filter-btn" data-filter="star">Звёзды</button>
+            </div>
+        </section>
+
+        <div class="gallery-grid" id="gallery">
+            <div class="gallery-item" data-category="planet">
+                <img src="assets/images/mars.jpg" alt="Марс">
+                <div class="overlay">
+                    <p class="caption">Марс</p>
+                    <button class="like-btn" data-id="1">♥ <span class="like-count">0</span></button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="planet">
+                <img src="assets/images/jupiter.jpg" alt="Юпитер">
+                <div class="overlay">
+                    <p class="caption">Юпитер</p>
+                    <button class="like-btn" data-id="2">♥ <span class="like-count">0</span></button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="galaxy">
+                <img src="assets/images/milky-way.jpg" alt="Млечный путь">
+                <div class="overlay">
+                    <p class="caption">Млечный путь</p>
+                    <button class="like-btn" data-id="3">♥ <span class="like-count">0</span></button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="galaxy">
+                <img src="assets/images/andromeda.jpg" alt="Андромеда">
+                <div class="overlay">
+                    <p class="caption">Андромеда</p>
+                    <button class="like-btn" data-id="4">♥ <span class="like-count">0</span></button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="star">
+                <img src="assets/images/nebula.jpg" alt="Туманность">
+                <div class="overlay">
+                    <p class="caption">Туманность Орёл</p>
+                    <button class="like-btn" data-id="5">♥ <span class="like-count">0</span></button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="star">
+                <img src="assets/images/sun.jpg" alt="Солнце">
+                <div class="overlay">
+                    <p class="caption">Солнце</p>
+                    <button class="like-btn" data-id="6">♥ <span class="like-count">0</span></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© Иванов Иван, студент 1 курса, 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

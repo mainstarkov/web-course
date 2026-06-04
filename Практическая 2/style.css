@@ -1,0 +1,104 @@
+/* ===== СБРОС СТАНДАРТНЫХ СТИЛЕЙ БРАУЗЕРА ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== ОБЩИЕ СТИЛИ СТРАНИЦЫ ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d1b2a;
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* ===== ШАПКА ===== */
+header {
+    background-color: #1a3a5c;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #7ec8e3;
+}
+
+/* ===== НАВИГАЦИЯ ===== */
+nav {
+    background-color: #0f2a45;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 3px;
+}
+
+nav ul li a:hover {
+    background-color: #7ec8e3;
+    color: #0d1b2a;
+}
+
+/* ===== ОСНОВНОЕ СОДЕРЖИМОЕ ===== */
+main {
+    background-color: #152535;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+
+/* ===== ЗАГОЛОВКИ H2 ===== */
+h2 {
+    color: #7ec8e3;
+    margin: 20px 0 12px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #1a3a5c;
+    font-size: 22px;
+}
+
+/* ===== АБЗАЦЫ ===== */
+p {
+    margin-bottom: 15px;
+}
+
+/* ===== СПИСКИ ===== */
+ul {
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* ===== ПОДВАЛ ===== */
+footer {
+    background-color: #1a3a5c;
+    color: #aaa;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+}
