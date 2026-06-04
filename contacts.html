@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — Всё о космосе</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <span class="logo-icon">🌌</span>
+                <span class="logo-text">КосмосСайт</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="contacts.html" class="active">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contacts-main">
+
+        <!-- Flexbox: карточка и форма рядом -->
+        <div class="contacts-layout">
+
+            <section class="contact-card">
+                <h2>Об авторе</h2>
+                <ul class="contact-info">
+                    <li class="info-name">Иванов Иван Иванович</li>
+                    <li class="info-email">ivan@example.com</li>
+                    <li class="info-topic">Астрономия и космос</li>
+                    <li class="info-location">Москва, Россия</li>
+                </ul>
+                <h3>Социальные сети</h3>
+                <ul class="social-links">
+                    <li><a href="#" class="social-link">ВКонтакте</a></li>
+                    <li><a href="#" class="social-link">Telegram</a></li>
+                    <li><a href="#" class="social-link">GitHub</a></li>
+                </ul>
+            </section>
+
+            <section class="contact-form-section">
+                <h2>Написать мне</h2>
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Тема сообщения</label>
+                        <select id="subject" name="subject">
+                            <option value="">Выберите тему...</option>
+                            <option value="general">Общий вопрос</option>
+                            <option value="cooperation">Сотрудничество</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message" placeholder="Ваше сообщение..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" required>
+                            Согласен(а) на обработку персональных данных
+                        </label>
+                    </div>
+                    <button type="submit" class="submit-btn">Отправить сообщение</button>
+                </form>
+            </section>
+
+        </div>
+
+        <section class="extra-info">
+            <h2>Полезная информация</h2>
+            <div class="info-blocks">
+                <div class="info-block">
+                    <h3>График доступности</h3>
+                    <ul>
+                        <li>Пн – Пт: 10:00 – 20:00</li>
+                        <li>Сб – Вс: только срочные вопросы</li>
+                        <li>Ответ в течение 24 часов</li>
+                    </ul>
+                </div>
+                <div class="info-block">
+                    <h3>FAQ</h3>
+                    <p><strong>Как быстро придёт ответ?</strong><br>В течение 1 рабочего дня.</p>
+                    <p><strong>Можно ли предложить тему?</strong><br>Да, пишите через форму!</p>
+                </div>
+                <div class="info-block">
+                    <h3>Как написать</h3>
+                    <ol>
+                        <li>Заполните форму</li>
+                        <li>Укажите тему</li>
+                        <li>Нажмите «Отправить»</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <span>© Иванов Иван, студент 1 курса, 2026</span>
+            <div class="footer-links">
+                <a href="index.html">Главная</a>
+                <a href="gallery.html">Галерея</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
